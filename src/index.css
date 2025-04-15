@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.heading1 {
+  @apply text-4xl font-normal text-gray-500;
+}
+.heading2 {
+  @apply text-6xl mt-5 font-bold;
+}
+
+.avatar {
+  @apply ml-50 mt-10 rounded-full w-49 h-49;
+}
+.heading3 {
+  @apply mt-5 text-3xl text-xl font-normal text-gray-500;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  @apply ml-50 mt-5;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  @apply bg-gray-900 text-white;
+  overflow: hidden;
+}
+
+.Underline {
+  @apply font-semibold text-gray-900 underline dark:text-white decoration-indigo-500;
+}
