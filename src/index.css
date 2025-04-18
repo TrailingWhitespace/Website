@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .heading1 {
   @apply text-4xl font-normal text-gray-500;
@@ -8,7 +10,8 @@
 }
 
 .avatar {
-  @apply ml-50 mt-10 rounded-full w-49 h-49;
+  @apply mt-10 mx-auto sm:ml-50 sm:mx-0 rounded-full w-49 h-49;
+  /*@apply ml-50 mt-10 rounded-full w-49 h-49; */
 }
 .heading3 {
   @apply mt-5 text-3xl text-xl font-normal text-gray-500;
@@ -35,16 +38,22 @@
 .main {
   display: flex;
   flex-direction: column;
-  @apply ml-50 mt-5;
+  @apply ml-10 sm:ml-[12.5rem] mt-5 mr-10;
+  /*@apply ml-50 mt-5;*/
 }
 body {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100vw;
-  margin-bottom: 5%;
-  @apply bg-gray-900 text-white;
+  /*margin-bottom: 10%;*/
+  @apply mb-10 sm:mb-10;
+  @apply bg-gray-900 text-white dark:bg-gray-100 dark:text-black;
   /*overflow: hidden;*/
 }
 
 .Underline {
-  @apply font-semibold text-gray-900 underline dark:text-white decoration-indigo-500;
+  @apply font-semibold text-white underline decoration-indigo-500 dark:text-gray-700;
+}
+
+.toggleTheme {
+  @apply absolute top-6 right-8;
 }
