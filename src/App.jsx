@@ -6,13 +6,20 @@ import {
 } from "react-icons/fa";
 import CycleThemes from "./components/Themes";
 import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 function App() {
   return (
     <>
+  
       <CycleThemes />
       <img className="avatar" src="src/img1.png" />
       <div className="main">
+      <motion.div
+         initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and move 50px down
+         animate={{ opacity: 1, y: 0 }}  // Fade to full opacity and move to original position
+         transition={{ duration: 1, ease: "easeOut" }} // Duration of the animation
+    >
         <p className="heading1">Heya 👋 ! I'm</p>
         <span className="heading2">
           <Typewriter
@@ -23,6 +30,12 @@ function App() {
             className="heading2"
           />
         </span>
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} // Add delay for the second section
+      >
         <p className="heading3">
           A first-year computer science student that likes
           <br></br>
@@ -33,6 +46,12 @@ function App() {
           <br></br>I've started to lean more towards web development as of late
           but I try to maintain a balance between the things I do.
         </p>
+        </motion.div>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 1 }} // Add delay for the second section
+      >
         <h1 className="heading4">Where can you find me?</h1>
         <div className="socials">
           <a
@@ -64,7 +83,9 @@ function App() {
             <span>@perhapsimalogicalsimp</span>
           </a>
         </div>
+        </motion.div>
       </div>
+  
     </>
   );
 }
