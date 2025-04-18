@@ -13,11 +13,7 @@ export default function ParallaxReveal({ children, className = "" }) {
   const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{ y, opacity }}
-      className={className}
-    >
+    <motion.div ref={ref} style={{ y, opacity }} className={className}>
       {children}
     </motion.div>
   );

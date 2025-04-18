@@ -18,7 +18,7 @@
 }
 
 .heading4 {
-  @apply mt-5 sm:mt-5 mb-5 text-2xl font-semibold sm:text-4xl
+  @apply mt-5 sm:mt-5 mb-5 text-2xl font-semibold sm:text-4xl;
 }
 
 .socials {
@@ -59,7 +59,6 @@ body {
   /*overflow: hidden;*/
 }
 
-
 .Underline {
   @apply font-semibold text-gray-700 underline decoration-indigo-500 dark:text-white;
 }
@@ -68,8 +67,6 @@ body {
   @apply absolute top-6 right-8;
 }
 
-
 html.stars .Underline {
   @apply text-white;
 }
-

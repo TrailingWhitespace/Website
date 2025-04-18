@@ -6,49 +6,43 @@ export default function CycleThemes() {
   const [theme, setTheme] = useState(() => {
     return localStorage.theme || "dark";
   });
-  
 
   useEffect(() => {
     const root = window.document.documentElement;
-    
+
     root.classList.remove("light", "dark", "stars"); // Remove all theme classes
-    root.classList.add(theme);                      // Add current theme class
+    root.classList.add(theme); // Add current theme class
     localStorage.theme = theme;
   }, [theme]);
-  
+
   const cycleTheme = () => {
-    setTheme((prev) =>{
-      if (prev === "dark"){
+    setTheme((prev) => {
+      if (prev === "dark") {
         return "light";
       } else if (prev === "light") {
         return "stars";
       } else {
         return "dark";
       }
-    }
-    );
+    });
   };
 
   let nextThemeIcon;
 
-if (theme === "dark") {
-  nextThemeIcon = <SunIcon className="w-6 h-6" />; // light next
-} else if (theme === "light") {
-  nextThemeIcon = <SparklesIcon className="w-6 h-6" />; // stars next
-} else {
-  nextThemeIcon = <MoonIcon className="w-6 h-6" />; // dark next
-}
+  if (theme === "dark") {
+    nextThemeIcon = <SunIcon className="w-6 h-6" />; // light next
+  } else if (theme === "light") {
+    nextThemeIcon = <SparklesIcon className="w-6 h-6" />; // stars next
+  } else {
+    nextThemeIcon = <MoonIcon className="w-6 h-6" />; // dark next
+  }
 
   return (
     <div>
-    {theme === "stars" && <StarsBackground />}
-    <button
-  onClick={cycleTheme}
-  className="toggleTheme"
->
-  {nextThemeIcon}
-</button>
-</div>
-
+      {theme === "stars" && <StarsBackground />}
+      <button onClick={cycleTheme} className="toggleTheme">
+        {nextThemeIcon}
+      </button>
+    </div>
   );
 }
