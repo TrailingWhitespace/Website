@@ -4,15 +4,13 @@ import {
   FaLinkedin as Linkedin,
   FaDiscord as Discord,
 } from "react-icons/fa";
-import ToggleTheme from "./components/darkMode";
+import CycleThemes from "./components/Themes";
 import { Typewriter } from "react-simple-typewriter";
-import  StarsBackground  from "./components/particles";
 
 function App() {
   return (
     <>
-      <ToggleTheme />
-      <StarsBackground/>
+      <CycleThemes />
       <img className="avatar" src="src/img1.png" />
       <div className="main">
         <p className="heading1">Heya 👋 ! I'm</p>

@@ -46,14 +46,28 @@ body {
   width: 100vw;
   /*margin-bottom: 10%;*/
   @apply mb-10 sm:mb-10;
-  @apply bg-gray-900 text-white dark:bg-gray-100 dark:text-black;
+  @apply bg-gray-100 text-black dark:text-white dark:bg-gray-900;
   /*overflow: hidden;*/
 }
 
 .Underline {
-  @apply font-semibold text-white underline decoration-indigo-500 dark:text-gray-700;
+  @apply font-semibold text-gray-700 underline decoration-indigo-500 dark:text-white;
 }
 
 .toggleTheme {
   @apply absolute top-6 right-8;
 }
+
+.stars body {
+  /*height: 100vh;*/
+  width: 100vw;
+  /*margin-bottom: 10%;*/
+  @apply mb-10 sm:mb-10;
+  @apply text-white;
+  /*overflow: hidden;*/
+}
+
+html.stars .Underline {
+  @apply text-white;
+}
+
