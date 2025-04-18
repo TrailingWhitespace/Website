@@ -7,11 +7,12 @@ import {
 import CycleThemes from "./components/Themes";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import ParallaxReveal from "./components/Scroll";
 
 function App() {
   return (
     <>
-  
+
       <CycleThemes />
       <img className="avatar" src="src/img1.png" />
       <div className="main">
@@ -26,7 +27,7 @@ function App() {
             words={["Prabhas Gunda."]}
             cursor
             cursorStyle="_"
-            typeSpeed={70}
+            typeSpeed={100}
             className="heading2"
           />
         </span>
@@ -47,11 +48,7 @@ function App() {
           but I try to maintain a balance between the things I do.
         </p>
         </motion.div>
-        <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 1 }} // Add delay for the second section
-      >
+ <ParallaxReveal>
         <h1 className="heading4">Where can you find me?</h1>
         <div className="socials">
           <a
@@ -83,9 +80,10 @@ function App() {
             <span>@perhapsimalogicalsimp</span>
           </a>
         </div>
-        </motion.div>
+        </ParallaxReveal>
       </div>
-  
+    
+
     </>
   );
 }

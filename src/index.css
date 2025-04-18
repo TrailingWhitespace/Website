@@ -18,7 +18,7 @@
 }
 
 .heading4 {
-  @apply mt-5 mb-5 text-2xl font-semibold sm:text-4xl
+  @apply mt-5 sm:mt-5 mb-5 text-2xl font-semibold sm:text-4xl
 }
 
 .socials {
@@ -45,17 +45,9 @@ body {
   /*height: 100vh;*/
   width: 100vw;
   /*margin-bottom: 10%;*/
-  @apply mb-10 sm:mb-10;
+  @apply mb-20 sm:mb-10;
   @apply bg-gray-100 text-black dark:text-white dark:bg-gray-900;
   /*overflow: hidden;*/
-}
-
-.Underline {
-  @apply font-semibold text-gray-700 underline decoration-indigo-500 dark:text-white;
-}
-
-.toggleTheme {
-  @apply absolute top-6 right-8;
 }
 
 .stars body {
@@ -66,6 +58,16 @@ body {
   @apply text-white;
   /*overflow: hidden;*/
 }
+
+
+.Underline {
+  @apply font-semibold text-gray-700 underline decoration-indigo-500 dark:text-white;
+}
+
+.toggleTheme {
+  @apply absolute top-6 right-8;
+}
+
 
 html.stars .Underline {
   @apply text-white;
