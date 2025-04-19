@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <CycleThemes />
-      <img className="avatar" src="https://picsum.photos/200/300" />{" "}
+      <img className="avatar" src="/images/img1.png" />
       {/*why doesnt src/img1.png work?*/}
       <div className="main">
         <motion.div
