@@ -14,7 +14,6 @@ function App() {
     <>
       <CycleThemes />
       <img className="avatar" src="/images/img1.png" />
-      {/*why doesnt src/img1.png work?*/}
       <div className="main">
         <motion.div
           initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and move 50px down

@@ -1,4 +1,3 @@
-// StarsBackground.jsx
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
