@@ -48,6 +48,11 @@ function App() {
           </p>
         </motion.div>
         <ParallaxReveal>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} // Add delay for the second section
+        >
           <h1 className="heading4">Where can you find me?</h1>
           <div className="socials">
             <a
@@ -55,7 +60,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="w-10 h-10 text-blue-500 hover:text-blue-300" />
+              <Linkedin className="socialsIcons" />
               <span>Linkedin</span>
             </a>
             <a
@@ -63,7 +68,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="w-10 h-10 text-blue-500 hover:text-blue-300" />
+              <Github className="socialsIcons" />
               <span>Github</span>
             </a>
             <a
@@ -71,14 +76,15 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram className="w-10 h-10 text-blue-500 hover:text-blue-300" />
+              <Instagram className="socialsIcons" />
               <span>Instagram</span>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <Discord className="w-10 h-10 text-blue-500 hover:text-blue-300" />
+              <Discord className="socialsIcons" />
               <span>@perhapsimalogicalsimp</span>
             </a>
           </div>
+          </motion.div>
         </ParallaxReveal>
       </div>
     </>
