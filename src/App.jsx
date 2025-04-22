@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <CycleThemes />
-      <img className="avatar" src="/images/img1.png" />
+      <img className="avatar" src="/images/img2.png" />
       <div className="main">
         <motion.div
           initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and move 50px down
@@ -48,42 +48,42 @@ function App() {
           </p>
         </motion.div>
         <ParallaxReveal>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} // Add delay for the second section
-        >
-          <h1 className="heading4">Where can you find me?</h1>
-          <div className="socials">
-            <a
-              href="https://linkedin.com/in/prabhasgunda"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="socialsIcons" />
-              <span>Linkedin</span>
-            </a>
-            <a
-              href="https://github.com/TrailingWhitespace"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="socialsIcons" />
-              <span>Github</span>
-            </a>
-            <a
-              href="https://instagram.com/perhapsimalogicalsimp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram className="socialsIcons" />
-              <span>Instagram</span>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <Discord className="socialsIcons" />
-              <span>@perhapsimalogicalsimp</span>
-            </a>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} // Add delay for the second section
+          >
+            <h1 className="heading4">Where can you find me?</h1>
+            <div className="socials">
+              <a
+                href="https://linkedin.com/in/prabhasgunda"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="socialsIcons" />
+                <span>Linkedin</span>
+              </a>
+              <a
+                href="https://github.com/TrailingWhitespace"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="socialsIcons" />
+                <span>Github</span>
+              </a>
+              <a
+                href="https://instagram.com/perhapsimalogicalsimp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="socialsIcons" />
+                <span>Instagram</span>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <Discord className="socialsIcons" />
+                <span>@perhapsimalogicalsimp</span>
+              </a>
+            </div>
           </motion.div>
         </ParallaxReveal>
       </div>
