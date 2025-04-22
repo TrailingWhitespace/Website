@@ -4,7 +4,12 @@ import StarsBackground from "./Particles";
 
 export default function CycleThemes() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.theme || "dark";
+    if (localStorage.theme) {
+      return localStorage.theme;
+    } else {
+      <StarsBackground />;
+      return "stars";
+    }
   });
 
   useEffect(() => {

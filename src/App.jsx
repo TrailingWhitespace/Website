@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <CycleThemes />
-      <img className="avatar" src="/images/img2.png" />
+      <img className="avatar" src="/images/img2.jpg" />
       <div className="main">
         <motion.div
           initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and move 50px down
